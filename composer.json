@@ -1,0 +1,33 @@
+{
+    "name": "binarycabin/options",
+    "description": "Class-based select options for Laravel",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jeff Kilroy",
+            "email": "jeffkilroy@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload":{
+        "psr-4": {
+            "BinaryCabin\\Options\\": "src"
+        }
+    },
+    "autoload-dev":{
+        "psr-4": {
+            "BinaryCabin\\Options\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "BinaryCabin\\Options\\Providers\\OptionServiceProvider"
+            ]
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.0"
+    }
+}

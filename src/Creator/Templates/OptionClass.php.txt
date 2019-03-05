@@ -1,0 +1,13 @@
+<?php
+
+namespace App\Options;
+
+use BinaryCabin\Options\BaseOption;
+
+class [CLASSNAME] extends BaseOption {
+
+	public function getArray(){
+        return [];
+    }
+
+}
