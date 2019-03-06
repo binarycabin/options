@@ -1,4 +1,5 @@
 <?php
+
 namespace BinaryCabin\Options\Providers;
 
 use Illuminate\Support\ServiceProvider;
@@ -19,9 +20,10 @@ class OptionServiceProvider extends ServiceProvider
         }
         //
         $this->publishes([
-            __DIR__.'/../Configuration/Templates/options.php' => config_path('options.php')
+            __DIR__.'/../Configuration/Templates/options.php' => config_path('options.php'),
         ], 'config');
     }
+
     /**
      * Register the application services.
      *
@@ -31,5 +33,4 @@ class OptionServiceProvider extends ServiceProvider
     {
         //
     }
-
 }

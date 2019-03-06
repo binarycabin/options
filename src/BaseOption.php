@@ -2,40 +2,43 @@
 
 namespace BinaryCabin\Options;
 
-abstract class BaseOption{
+abstract class BaseOption
+{
+    protected $attributes = [];
 
-    protected $attributes=[];
-
-    public static function get($blank=false, $attributes=[]){
+    public static function get($blank = false, $attributes = [])
+    {
         $optionClass = new static();
         $optionClass->attributes = $attributes;
         $array = $optionClass->getArray();
         $response = [];
-        if(!empty($blank)){
+        if (! empty($blank)) {
             $response[''] = $blank;
         }
-        foreach($array as $key => $arrayItem){
+        foreach ($array as $key => $arrayItem) {
             $response[$key] = $arrayItem;
         }
+
         return $response;
     }
 
-    public static function checkboxes($attributes=[]){
+    public static function checkboxes($attributes = [])
+    {
         $optionClass = new static();
         $optionClass->attributes = $attributes;
         $name = '';
-        if(!empty($attributes['name'])){
+        if (! empty($attributes['name'])) {
             $name = $attributes['name'];
         }
         $checkedKeys = [];
-        if(!empty($attributes['checked'])){
+        if (! empty($attributes['checked'])) {
             $checkedKeys = $attributes['checked'];
         }
         $array = $optionClass->getArray();
         $response = [];
-        foreach($array as $key => $label){
+        foreach ($array as $key => $label) {
             $checked = false;
-            if(in_array($key,$checkedKeys)){
+            if (in_array($key, $checkedKeys)) {
                 $checked = true;
             }
             $response[$label] = [
@@ -44,15 +47,17 @@ abstract class BaseOption{
                 'value' => $key,
             ];
         }
+
         return $response;
     }
 
-    public function keysAsValues($array = []){
+    public function keysAsValues($array = [])
+    {
         return array_combine($array, $array);
     }
 
-    public function getArray(){
+    public function getArray()
+    {
         return [];
     }
-
 }
