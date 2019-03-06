@@ -2,12 +2,12 @@
 
 namespace BinaryCabin\Options\Configuration;
 
-class OptionConfig{
-
+class OptionConfig
+{
     private $optionAppDirectory = '/Options';
 
-    public function getOptionAppDirectory(){
+    public function getOptionAppDirectory()
+    {
         return $this->optionAppDirectory;
     }
-
 }
