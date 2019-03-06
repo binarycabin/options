@@ -1,6 +1,8 @@
 # Options
 
-Class-based select options for Laravel
+Class-based select options for Laravel.
+
+This package makes it easy to store a static list of array items. This is useful in form select-list building.
 
 ## Installation
 
