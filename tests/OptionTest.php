@@ -1,6 +1,6 @@
 <?php
 
-namespace BinaryCabin\Tests;
+namespace BinaryCabin\Options\Tests;
 
 use PHPUnit\Framework\TestCase;
 use BinaryCabin\Options\BaseOption;
