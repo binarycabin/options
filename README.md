@@ -2,6 +2,8 @@
 
 [![Build Status](https://travis-ci.org/binarycabin/options.svg?branch=master)](https://travis-ci.org/binarycabin/options)
 
+[![StyleCI](https://github.styleci.io/repos/174015614/shield?branch=master)](https://github.styleci.io/repos/174015614)
+
 Class-based select options for Laravel.
 
 This package makes it easy to store a static list of array items. This is useful in form select-list building.
