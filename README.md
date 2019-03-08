@@ -1,7 +1,6 @@
 # Options
 
 [![Build Status](https://travis-ci.org/binarycabin/options.svg?branch=master)](https://travis-ci.org/binarycabin/options)
-
 [![StyleCI](https://github.styleci.io/repos/174015614/shield?branch=master)](https://github.styleci.io/repos/174015614)
 
 Class-based select options for Laravel.
